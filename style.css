@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+#container{
+    background-image: linear-gradient(rgba(183, 0, 255, 0.911), rgba(0, 247, 255, 0.9), rgba(0, 255, 136, 0.9));
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+}
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    border-radius: 5px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result{
+    height: 120px;
+    margin-right: 10px;
+
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    margin: 10px 20px;
+    height: 60px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.number, .operator{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 20pt;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+/* Button Color using nth chlid-selector */
+
+button:nth-child(4){
+    background-color: aquamarine;
+}
+button:nth-child(8){
+    background-color: tomato;
+}
+button:nth-child(12){
+    background-color: palevioletred;
+}
+button:nth-child(16){
+    background-color: yellowgreen;
+}
+button:nth-child(20){
+    background-color: peru;
+}
+button:hover{
+    background-color: white;
+    
+}
